@@ -1,0 +1,1 @@
+export const data = [ 'Overview', 'Tenants','Payments','Properties','Products','Enquiry','Sales Platform']
