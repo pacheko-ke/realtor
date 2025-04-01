@@ -25,7 +25,7 @@ export default function Home() {
                 <div className='flex flex-col  text-white text-left px-4 gap-2 py-4 pt-20 md:basis-1/2 md:gap-8 mt-10'>
                     <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, }} className=' text-3xl md:text-5xl font-bold'>Property management, revenue collection and billing under one roof.</motion.h1>
                     <motion.p initial={{ x: 500 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} className='md:text-xl'>Grow recurring revenue, and reduce costs with a single unified platform for payments, subscriptions, invoicing, accounting, tax, and more.</motion.p>
-                    <div className="flex flex-col md:flex-row md:justify-between md:gap-4">
+                    <div className="flex flex-col md:flex-row md:justify-between gap-2 md:gap-4">
                         <button className='bg-[#F1F252] rounded-full text-[#1c1b18] py-2 md:w-1/2' onClick={raiseAlert}>Sign Up</button>
                         <button className='border border-white rounded-full text-white py-2 md:w-1/2' onClick={raiseAlert}>Request Quote</button>
                     </div>
