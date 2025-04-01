@@ -27,7 +27,7 @@ export default function Home() {
                 <button className='bg-[#F1F252] rounded-full text-[#1c1b18] py-2' onClick={raiseAlert}>Sign Up</button>
                 <button className='border border-white rounded-full text-white py-2' onClick={raiseAlert}>Request Quote</button>
             </div>
-            <img src={Dashboard} alt="imahe here" className='mx-4 mt-6'/>
+            <img src={Dashboard} alt="image here" className='mx-4 mt-6' />
             <EarlyAccess />
 
 
