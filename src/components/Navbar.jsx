@@ -31,7 +31,7 @@ export default function Navbar() {
         <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10 text-white" onClick={openNav}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
         </svg>
-        <div className={!navOpen ? ' text-white top-0 py-2 text-2xl italic ' : 'hidden'}>realtors<span className='text-[#F1F252]'>.</span></div>
+        <div className={!navOpen ? ' text-white top-0 py-2 text-2xl  ' : 'hidden'}>realtors<span className='text-[#F1F252]'>.</span></div>
 
       </div>
     </div>
