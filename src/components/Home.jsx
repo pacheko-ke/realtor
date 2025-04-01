@@ -36,7 +36,7 @@ export default function Home() {
 
             </div>
             <img src={Dashboard} alt="image here" className='mx-4 mt-6 ' />
-            {/* <EarlyAccess /> */}
+            <EarlyAccess />
 
 
         </div>
