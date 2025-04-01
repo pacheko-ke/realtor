@@ -12,9 +12,9 @@ export default function Navbar() {
 
 
 
-    <div className='top-0 fixed w-full shadow-xl pl-2'>
+    <div className='top-0 fixed w-full shadow-xl '>
       {/* mobile nav */}
-      <ul className={navOpen ? 'text-white lg:hidden h-full bg-[#1c1b18] w-3/4 text-5xl gap-2 flex flex-col fixed top-0' : 'text-white hidden h-full bg-red-500 w-3/4 text-5xl gap-2  flex-col fixed top-0'}>
+      <ul className={navOpen ? 'text-white lg:hidden h-full bg-[#1c1b18] w-3/4 text-5xl gap-2 flex flex-col fixed top-0 pl-2' : 'text-white hidden h-full bg-red-500 w-3/4 text-5xl gap-2  flex-col fixed top-0'}>
         <h1 className='absolute w-full text-right pr-6 text-4xl' onClick={openNav}>x</h1>
         <div className=' text-white top-0 py-2   mb-10 mt-10'>realtors<span className='text-[#F1F252]'>.</span></div>
 
