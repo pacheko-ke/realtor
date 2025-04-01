@@ -9,7 +9,7 @@ export default function Landing() {
 
       <Navbar />
       <Home />
-      <Features />
+      {/* <Features /> */}
     </>
   )
 }
