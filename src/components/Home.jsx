@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "motion/react"
 import EarlyAccess from './core/EarlyAccess'
+import Dashboard from '../assets/images/dashboard-illustration.svg'
 
 
 export default function Home() {
@@ -10,11 +11,11 @@ export default function Home() {
     }
 
     const variants = {
-        initial:{
-            y:500
+        initial: {
+            y: 500
         },
-        animate:{
-            y:0
+        animate: {
+            y: 0
         }
     }
 
@@ -26,8 +27,10 @@ export default function Home() {
                 <button className='bg-[#F1F252] rounded-full text-[#1c1b18] py-2' onClick={raiseAlert}>Sign Up</button>
                 <button className='border border-white rounded-full text-white py-2' onClick={raiseAlert}>Request Quote</button>
             </div>
+            <img src={Dashboard} alt="imahe here" className='mx-4 mt-6'/>
             <EarlyAccess />
-           
+
+
         </div>
 
 
