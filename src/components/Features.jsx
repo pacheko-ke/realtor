@@ -1,10 +1,10 @@
 import React from 'react'
-import Pay from '../images/pay.svg'
-import Chat from '../images/chat.svg'
-import Paypal from '../images/paypal.svg'
-import Mpesa from '../images/mpesa.svg'
-import Visa from '../images/visa.svg'
-import Stripe from '../images/stripe.svg'
+import Pay from '../assets/images/pay.svg'
+import Chat from '../assets/images/chat.svg'
+import Paypal from '../assets/images/paypal.svg'
+import Mpesa from '../assets/images/mpesa.svg'
+import Visa from '../assets/images/visa.svg'
+import Stripe from '../assets/images/stripe.svg'
 
 export default function Features() {
     return (
@@ -15,7 +15,7 @@ export default function Features() {
                 <h1 className='text-md font-bold '>Multiple Payment Methods</h1>
                 <p>The mobile app allows your tenants to send payments easily and conviniently through a number of supported payment providers.</p>
                 <div className="overflow-x-scroll flex gap-2">
-                    
+
                     <img src={Mpesa} alt="mpesa" className='flex-none size-28' />
                     <img src={Visa} alt="visa" className='flex-none size-28' />
                     <img src={Stripe} alt="stripe" className='flex-none size-28' />

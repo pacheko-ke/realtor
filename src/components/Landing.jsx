@@ -6,9 +6,10 @@ import Features from './Features'
 export default function Landing() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Features />
+      <h1>Hello world</h1>
+      {/* <Navbar /> */}
+      {/* <Home /> */}
+      {/* <Features /> */}
     </>
   )
 }

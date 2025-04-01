@@ -1,6 +1,6 @@
 import React from 'react'
-import { motion } from "framer-motion"
-import { animate } from 'framer-motion/dom'
+// import { motion } from "motion/react"
+
 
 export default function Home() {
 

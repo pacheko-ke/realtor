@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import Landing from '../src/components/Landing'
 
