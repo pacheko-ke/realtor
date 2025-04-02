@@ -28,7 +28,7 @@ const Pay = () => {
             <button className='bg-black rounded-md text-white w-full py-1 cursor-pointer'><img src={Apple} alt="" className='mx-auto size-6  ' /></button>
             <h1 className='my-4 text-center'>or pay with other method</h1>
 
-            <div className="flex gap-2 ">
+            <div className="flex gap-2 overflow-x-scroll">
                 <div className="flex flex-col py-2 pl-2  pr-16 border rounded-lg border-purple-400 cursor-pointer gap-1" onClick={() => toggleCard()}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-purple-400">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
