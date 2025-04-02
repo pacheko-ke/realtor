@@ -25,7 +25,7 @@ export default function Login() {
                 <div className="flex justify-between text-3xl">
                     <Link className=' ' to={'/'}>realtors.</Link>
 
-                    <Link to={'/'} className='text-xl underline cursor-pointer'>Landlord Sign Up</Link>
+                    <Link to={'/'} className='text-xl underline cursor-pointer'>Create Account</Link>
 
                 </div>
 
@@ -42,7 +42,7 @@ export default function Login() {
 
                 <div className="flex flex-col">
                     <label htmlFor="businessName">Email</label>
-                    <input type="text" id='businessName' className='border rounded-lg py-2 focus:border-2 pl-2' />
+                    <input type="text" id='businessName' className='border rounded-lg py-2 focus:border-2 pl-2 invalid:border-red-400' />
                 </div>
                 <div className="flex flex-col relative">
                     <label htmlFor="businessName">Password</label>
@@ -62,7 +62,7 @@ export default function Login() {
                     <p className='text-sm'>I agree to the terms of service and incorporated terms, no fees terms, sanctions agreement and understand realtor’s privacy notice.</p>
                 </div>
 
-                <button className='bg-[#F1F252] py-2 rounded-full'>Proceed to Dashboard</button>
+                <button className='bg-[#F1F252] py-2 rounded-full cursor-pointer'>Proceed to Dashboard</button>
             </div>
         </div>
     )
