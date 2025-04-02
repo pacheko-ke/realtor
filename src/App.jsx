@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Landing from '../src/components/Landing'
 import NotFound from '../src/components/core/NotFound'
+import Login from '../src/components/auth/Login'
 
 import { createBrowserRouter, RouterProvider, Route, Routes, HashRouter } from 'react-router-dom'
 
@@ -12,6 +13,11 @@ function App() {
     {
       path: '/',
       element: <Landing />,
+      errorElement: <NotFound />,
+    },
+    {
+      path: '/login',
+      element: <Login />,
       errorElement: <NotFound />,
     },
 
