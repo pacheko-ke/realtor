@@ -1,5 +1,5 @@
 import React from 'react'
-import lost from '../images/lost.svg'
+import lost from '../../assets/images/lost.svg'
 import { Link } from 'react-router-dom'
 
 export default function NotFound() {
@@ -11,6 +11,6 @@ export default function NotFound() {
       {/* <button class="mb-2 border-none bg-black text-white px-4 w-1/2 rounded-full h-10">Back Home</button> */}
 
     </div>
-    
+
   )
 }
