@@ -16,6 +16,10 @@ const Pay = () => {
         activateMpesa(false)
     }
 
+    function toggleAirtel() {
+        activateMpesa('')
+    }
+
 
 
     return (
@@ -23,6 +27,7 @@ const Pay = () => {
             <button className='bg-black rounded-md text-white w-full py-1 cursor-pointer'><img src={Google} alt="" className='mx-auto size-6 ' /></button>
             <button className='bg-black rounded-md text-white w-full py-1 cursor-pointer'><img src={Apple} alt="" className='mx-auto size-6  ' /></button>
             <h1 className='my-4 text-center'>or pay with other method</h1>
+
             <div className="flex gap-2 ">
                 <div className="flex flex-col py-2 pl-2  pr-16 border rounded-lg border-purple-400 cursor-pointer gap-1" onClick={() => toggleCard()}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-purple-400">
@@ -35,7 +40,7 @@ const Pay = () => {
                 <div className="flex flex-col py-4 px-10 border rounded-lg cursor-pointer" onClick={toggleMpesa}>
                     <h1>Mpesa</h1>
                 </div>
-                <div className="flex flex-col py-4 px-10 border rounded-lg cursor-pointer" onClick={toggleMpesa}>
+                <div className="flex flex-col py-4 px-10 border rounded-lg cursor-pointer" onClick={()=>{return 0}}>
                     <h1>Airtel Money</h1>
                 </div>
 
@@ -51,12 +56,12 @@ const Pay = () => {
 
 
             {/* AIRTEL MONEY PAYMENT */}
-            <div className={mpesaActive ? 'flex flex-col mt-2' : 'hidden'}>
-                <label htmlFor="cardNumber " className='text-left mt-4'>Mpesa Number</label>
+            {/* <div className={mpesaActive ? 'flex flex-col mt-2' : 'hidden'}>
+                <label htmlFor="cardNumber " className='text-left mt-4'>Airtel Number</label>
                 <input type="text" className='border rounded-md py-2 pl-2 text-sm' placeholder='254712345678' />
 
                 <button className='bg-green-400  rounded-md text-black w-full py-2 mt-3'>Process Payment</button>
-            </div>
+            </div> */}
 
 
             {/* CARD PAYMENT */}
