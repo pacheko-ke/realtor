@@ -18,7 +18,7 @@ export default function Login() {
     }
 
     return (
-        <div className='flex md:flex-row md:mx-20 h-full mx-2'>
+        <div className='flex md:flex-row md:mx-20 h-full mx-4'>
             <img src="" alt="login screen image" className='hidden md:flex basis-1/2' />
             <div className="flex flex-col  text-left  mt-20  gap-4 mx-auto md:px-72 px-4">
 
@@ -57,7 +57,10 @@ export default function Login() {
 
                 </div>
 
-               
+                <div className="flex gap-2">
+                    <input type="checkbox" name="" id="" className='items-start size-6 accent-[#F1F252]' />
+                    <p className='text-sm'>I agree to the terms of service and incorporated terms, no fees terms, sanctions agreement and understand realtor’s privacy notice.</p>
+                </div>
 
                 <button className='bg-[#F1F252] py-2 rounded-full'>Proceed to Dashboard</button>
             </div>
