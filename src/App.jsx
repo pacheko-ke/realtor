@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import Landing from '../src/components/Landing'
 import NotFound from '../src/components/core/NotFound'
 import Login from '../src/components/auth/Login'
