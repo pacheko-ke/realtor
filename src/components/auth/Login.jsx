@@ -59,7 +59,7 @@ export default function Login() {
 
                 <div className="flex gap-2">
                     <input type="checkbox" name="" id="" className='items-start size-6 accent-[#F1F252]' />
-                    <p className='text-sm'>I agree to the terms of service and incorporated terms, no fees terms, sanctions agreement and understand Keja’s privacy notice.</p>
+                    <p className='text-sm'>I agree to the terms of service and incorporated terms, no fees terms, sanctions agreement and understand realtor’s privacy notice.</p>
                 </div>
 
                 <button className='bg-[#F1F252] py-2 rounded-full'>Proceed to Dashboard</button>
