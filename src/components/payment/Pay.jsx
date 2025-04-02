@@ -50,6 +50,15 @@ const Pay = () => {
             </div>
 
 
+            {/* AIRTEL MONEY PAYMENT */}
+            <div className={mpesaActive ? 'flex flex-col mt-2' : 'hidden'}>
+                <label htmlFor="cardNumber " className='text-left mt-4'>Mpesa Number</label>
+                <input type="text" className='border rounded-md py-2 pl-2 text-sm' placeholder='254712345678' />
+
+                <button className='bg-green-400  rounded-md text-black w-full py-2 mt-3'>Process Payment</button>
+            </div>
+
+
             {/* CARD PAYMENT */}
             <div className={!mpesaActive ? 'flex flex-col' : 'hidden'}>
                 <label htmlFor="cardNumber " className='text-left mt-4'>Card Number</label>
