@@ -17,18 +17,18 @@ export default function Login() {
     }
 
     return (
-        <div className='flex md:flex-row md:mx-20 h-full mx-6'>
+        <div className='flex md:flex-row md:mx-20 h-full mx-4'>
             <img src="" alt="login screen image" className='hidden md:flex basis-1/2' />
-            <div className="flex flex-col  text-left  mt-20  gap-4 mx-auto px-70 md:px-72 px-4">
+            <div className="flex flex-col  text-left  mt-20  gap-4 mx-auto md:px-72 px-4">
 
                 <div className="flex justify-between text-3xl">
-                    <h1 className=' italic '>Keja.</h1>
+                    <Link className=' ' to={'/'}>realtors.</Link>
 
-                    <Link to={'/'} className='text-xl underline cursor-pointer'>Landlord Sign Up</Link>
+                    <Link to={'/signup'} className='text-xl underline cursor-pointer'>Sign Up</Link>
 
                 </div>
 
-                <h1 className='text-3xl font-medium'>Login In To Your Account </h1>
+                <h1 className='text-3xl font-medium'>Log In To Your Account </h1>
 
 
                 <select className='border rounded-lg py-2 focus:border-2 pl-2'>
@@ -41,7 +41,7 @@ export default function Login() {
 
                 <div className="flex flex-col">
                     <label htmlFor="businessName">Email</label>
-                    <input type="text" id='businessName' className='border rounded-lg py-2 focus:border-2 pl-2' />
+                    <input type="text" id='businessName' className='border rounded-lg py-2 focus:border-2 pl-2 invalid:border' />
                 </div>
                 <div className="flex flex-col relative">
                     <label htmlFor="businessName">Password</label>
@@ -58,10 +58,10 @@ export default function Login() {
 
                 <div className="flex gap-2">
                     <input type="checkbox" name="" id="" className='items-start size-6 accent-[#F1F252]' />
-                    <p className='text-sm'>I agree to the terms of service and incorporated terms, no fees terms, sanctions agreement and understand Keja’s privacy notice.</p>
+                    <p className='text-sm'>I agree to the terms of service and incorporated terms, no fees terms, sanctions agreement and understand realtor’s privacy notice.</p>
                 </div>
 
-                <button className='bg-gray-300 py-2 rounded-full'>Proceed to Dashboard</button>
+                <button className='bg-[#F1F252] py-2 rounded-full'>Proceed to Dashboard</button>
             </div>
         </div>
     )
