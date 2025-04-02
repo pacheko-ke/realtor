@@ -28,7 +28,7 @@ function App() {
     {
       path: '/pay',
       element: <Pay />,
-      errorElement: <NotFound />,
+
     },
 
 
