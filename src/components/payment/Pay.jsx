@@ -1,6 +1,6 @@
 import React from 'react';
-import Apple from '../images/applepay.svg';
-import Google from '../images/gpay.svg';
+import Apple from '../../assets/images/applepay.svg';
+import Google from '../../assets/images/gpay.svg';
 import { useState } from 'react';
 
 
@@ -42,7 +42,7 @@ const Pay = () => {
             </div>
 
 
-            {/* MPESA PAYMENT */}
+            {/* CARD PAYMENT */}
             <div className={ payment ? 'flex flex-col': 'hidden'}>
                 <label htmlFor="cardNumber " className='text-left mt-4'>Card Number</label>
                 <input type="text" className='border rounded-md py-2 pl-2 text-sm' placeholder='1234 1234 1234 1234' />

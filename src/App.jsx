@@ -2,6 +2,7 @@ import React from 'react'
 import Landing from '../src/components/Landing'
 import NotFound from '../src/components/core/NotFound'
 import Login from '../src/components/auth/Login'
+import Pay from '../src/components/payment/Pay'
 import SignUp from '../src/components/auth/SignUp'
 import { createBrowserRouter, RouterProvider, Route, Routes, HashRouter } from 'react-router-dom'
 
@@ -22,6 +23,11 @@ function App() {
     {
       path: '/signup',
       element: <SignUp />,
+      errorElement: <NotFound />,
+    },
+    {
+      path: '/pay',
+      element: <Pay />,
       errorElement: <NotFound />,
     },
 
