@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 export default function Navbar() {
@@ -24,8 +25,8 @@ export default function Navbar() {
           <div className='text-sm absolute top-1 right-16 text-black px-1 bg-[#F1F252] rounded-md'>NEW</div>
           </div> */}
 
-        <li>Sign Up</li>
-        <li>Login</li>
+        <Link to={'/login'}>Sign Up</Link>
+        <Link to={'/login'}>Login</Link>
       </ul>
 
       <div className='bg-[#1c1b18] flex px-4 pt-4 justify-between items-center mx-auto text-white '>
@@ -39,8 +40,8 @@ export default function Navbar() {
           <div className='text-sm absolute top-1 right-16 text-black px-1 bg-[#F1F252] rounded-md'>NEW</div>
           </div> */}
 
-          <li>Sign Up</li>
-          <li>Login</li>
+          <Link to={'/login'}>Sign Up</Link>
+          <li to={'/login'}>Login</li>
         </ul>
         <div className={!navOpen ? ' text-white top-0 py-2 text-2xl ' : 'hidden'}>realtors<span className='text-[#F1F252]'>.</span></div>
 

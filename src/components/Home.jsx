@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from "motion/react"
 import EarlyAccess from './core/EarlyAccess'
 import Dashboard from '../assets/images/dashboard-illustration.svg'
+import { Link } from 'react-router-dom'
 
 
 export default function Home() {
