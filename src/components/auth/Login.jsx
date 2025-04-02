@@ -23,7 +23,7 @@ export default function Login() {
             <div className="flex flex-col  text-left  mt-20  gap-4 mx-auto md:px-72 px-4">
 
                 <div className="flex justify-between text-3xl">
-                    <h1 className=' italic '>Keja.</h1>
+                    <h1 className=' ita '>realtors.</h1>
 
                     <Link to={'/'} className='text-xl underline cursor-pointer'>Landlord Sign Up</Link>
 
@@ -62,7 +62,7 @@ export default function Login() {
                     <p className='text-sm'>I agree to the terms of service and incorporated terms, no fees terms, sanctions agreement and understand Keja’s privacy notice.</p>
                 </div>
 
-                <button className='bg-gray-300 py-2 rounded-full'>Proceed to Dashboard</button>
+                <button className='bg-[#F1F252] py-2 rounded-full'>Proceed to Dashboard</button>
             </div>
         </div>
     )
