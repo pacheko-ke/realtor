@@ -10,13 +10,13 @@ export default function Visualize() {
             {/* Data visualization section */}
             <div className="flex gap-6 flex-col md:flex-row">
                 <div className="flex w-full md:basis-3/4 bg-gray-100 shadow-lg flex-col py-2 ">
-                <h1 className='text-xl'>Revenue Collection Per Quarter</h1>
+                    <h1 className='text-xl'>Revenue Collection Per Quarter</h1>
                     <BarChart
                         series={[
-                            
+
                             { data: [51, 6] },
                             { data: [15, 25] },
-                            
+
                         ]}
                         height={290}
                         xAxis={[{ data: ['Q1', 'Q2'], scaleType: 'band' }]}
@@ -24,7 +24,7 @@ export default function Visualize() {
                     />
                 </div>
                 <div className="flex w-full  md:basis-1/4  bg-gray-100 shadow-lg flex-col py-2">
-                <h1 className='text-xl'>Revenue Collection Per Quarter</h1>
+                    <h1 className='text-xl'>Revenue Collection Per Quarter</h1>
                     {
 
                         <PieChart
@@ -68,9 +68,9 @@ export default function Visualize() {
 
 
                 </div>
-                
+
                 <div className="flex w-full md:basis-1/3 bg-gray-100 shadow-lg  flex-col py-2">
-                <h1 className='text-xl'>Dues cleared</h1>
+                    <h1 className='text-xl'>Dues cleared</h1>
 
                     <Gauge
                         value={75}
@@ -87,10 +87,10 @@ export default function Visualize() {
                         }
                     />
                 </div>
-                
+
 
 
             </div>
-            </>
+        </>
     )
 }

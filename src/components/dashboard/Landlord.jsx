@@ -10,7 +10,7 @@ export default function Landlord() {
         <div>
             <div className="flex gap-4 h-full mx-6 mt-4 flex-row ">
                 {/* sidenav */}
-                <div className=" sidebar gap-6 text-left hidden md:flex flex flex-col">
+                <div className=" sidebar gap-6 text-left hidden md:flex flex-col">
 
                     <div className='flex gap-4'>
                         <h1>Keja</h1>

@@ -3,7 +3,6 @@ import Landing from '../src/components/Landing'
 import NotFound from '../src/components/core/NotFound'
 import Login from '../src/components/auth/Login'
 import SignUp from '../src/components/auth/SignUp'
-
 import { createBrowserRouter, RouterProvider, Route, Routes, HashRouter } from 'react-router-dom'
 
 // import './App.css'
@@ -25,6 +24,7 @@ function App() {
       element: <SignUp />,
       errorElement: <NotFound />,
     },
+
 
   ]);
 

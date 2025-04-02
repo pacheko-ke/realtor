@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className='text-sm absolute top-1 right-16 text-black px-1 bg-[#F1F252] rounded-md'>NEW</div>
           </div> */}
 
-        <Link to={'/login'}>Sign Up</Link>
+        <Link to={'/signup'}>Sign Up</Link>
         <Link to={'/login'}>Login</Link>
       </ul>
 
