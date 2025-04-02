@@ -41,7 +41,7 @@ export default function Navbar() {
           </div> */}
 
           <Link to={'/login'}>Sign Up</Link>
-          <li to={'/login'}>Login</li>
+          <Link to={'/login'}>Login</Link>
         </ul>
         <div className={!navOpen ? ' text-white top-0 py-2 text-2xl ' : 'hidden'}>realtors<span className='text-[#F1F252]'>.</span></div>
 
