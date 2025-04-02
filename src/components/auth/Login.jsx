@@ -23,7 +23,7 @@ export default function Login() {
             <div className="flex flex-col  text-left  mt-20  gap-4 mx-auto md:px-72 px-4">
 
                 <div className="flex justify-between text-3xl">
-                    <h1 className=' ita '>realtors.</h1>
+                    <Link className=' ' to={'/'}>realtors.</Link>
 
                     <Link to={'/'} className='text-xl underline cursor-pointer'>Landlord Sign Up</Link>
 
