@@ -18,7 +18,7 @@ export default function Login() {
     }
 
     return (
-        <div className='flex md:flex-row md:mx-20 h-full mx-6'>
+        <div className='flex md:flex-row md:mx-20 h-full mx-4'>
             <img src="" alt="login screen image" className='hidden md:flex basis-1/2' />
             <div className="flex flex-col  text-left  mt-20  gap-4 mx-auto md:px-72 px-4">
 
