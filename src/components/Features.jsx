@@ -8,7 +8,7 @@ import Stripe from '../assets/images/stripe.svg'
 
 export default function Features() {
     return (
-        <div className='mt-10 flex flex-col mx-4 text-left gap-4 '>
+        <div className='mt-10 flex flex-col mx-4 text-left gap-4 mb-4 '>
             <h1 className='text-2xl font-bold mb-2'>Manage Your Properties. But With Zero Hassle</h1>
 
             <div className='flex flex-col gap-y-4 '>
@@ -31,11 +31,7 @@ export default function Features() {
                     {/* <img src={Chat} alt="payment" /> */}
                 </div>
 
-                <div className="bg-blue-300 border-2 h-[20vh] border-black rounded-xl p-2">
-                    <h1 className='text-md font-bold mt-4 **:'>Automate admin</h1>
-                    <p>Super powerful customizable admin dashboard to help you gain insights of your revenue.</p>
-                    {/* <img src={Chat} alt="payment" /> */}
-                </div>
+
                 <div className="bg-blue-300 border-2 h-[20vh] border-black rounded-xl p-2">
                     <h1 className='text-md font-bold mt-4'>Instant notifications and reminders</h1>
                     <p>Automatically send payment and maintenance notifications and reminders to tenants and agents via SMS and Email.</p>
