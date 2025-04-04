@@ -5,6 +5,7 @@ import Login from '../src/components/auth/Login'
 import Pay from '../src/components/payment/Pay'
 import SignUp from '../src/components/auth/SignUp'
 import { createBrowserRouter, RouterProvider, Route, Routes, HashRouter } from 'react-router-dom'
+import Pricing from './components/core/Pricing'
 
 // import './App.css'
 
@@ -18,6 +19,11 @@ function App() {
     {
       path: '/login',
       element: <Login />,
+      errorElement: <NotFound />,
+    },
+    {
+      path: '/pricing',
+      element: <Pricing />,
       errorElement: <NotFound />,
     },
     {
