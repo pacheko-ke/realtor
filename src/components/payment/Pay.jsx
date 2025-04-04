@@ -3,6 +3,8 @@ import Apple from '../../assets/images/applepay.svg';
 import Google from '../../assets/images/gpay.svg';
 import { useState } from 'react';
 
+import {initiateSTKPush} from '../../api/pay/mpesa/stkPush.js'
+
 
 const Pay = () => {
 
@@ -51,7 +53,7 @@ const Pay = () => {
                 <label htmlFor="cardNumber " className='text-left mt-4'>Mpesa Number</label>
                 <input type="text" className='border rounded-md py-2 pl-2 text-sm' placeholder='254712345678' />
 
-                <button className='bg-green-400  rounded-md text-black w-full py-2 mt-3'>Process Payment</button>
+                <button className='bg-green-400  rounded-md text-black w-full py-2 mt-3' onClick={initiateSTKPush()}>Process Payment</button>
             </div>
 
 
@@ -78,7 +80,7 @@ const Pay = () => {
                         <input type="text" className='border rounded-md py-2 pl-2 text-sm' placeholder='CVV' />
                     </div>
                 </div>
-                <button className='bg-green-400  rounded-md text-black w-full py-2 mt-3 cursor-pointer'>Process Payment</button>
+                <button className='bg-green-400  rounded-md text-black w-full py-2 mt-3 cursor-pointer'  >Process Payment</button>
             </div>
 
             <h1 className='site-security-notice'> </h1>

@@ -52,11 +52,12 @@ const generatePassword = () => {
 };
 
 // Initiate STK Push on the subject mobile number
-const initiateSTKPush = async () => {
+export async function initiateSTKPush  ()  {
     const accessToken = await generateAccessToken();
     const url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
     const timestamp = generateTimestamp();
     const password = generatePassword();
+    console.log('ruunn')
 
     const data = {
         BusinessShortCode: businessShortCode,
