@@ -9,11 +9,6 @@ import { Link } from 'react-router-dom'
 
 
 export default function Home() {
-
-    const raiseAlert = () => {
-        alert("Feature under development")
-    }
-
     const variants = {
         initial: {
             y: 500
@@ -30,8 +25,8 @@ export default function Home() {
                     <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, }} className=' text-3xl md:text-5xl font-bold'>Property management, revenue collection and billing under one roof.</motion.h1>
                     <motion.p initial={{ x: 500 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} className='md:text-xl'>Grow recurring revenue, and reduce costs with a single unified platform for payments, subscriptions, invoicing, accounting, tax, and more.</motion.p>
                     <div className="flex flex-col md:flex-row md:justify-between gap-2 md:gap-4">
-                        <button className='bg-[#F1F252] rounded-full text-[#1c1b18] py-2 md:w-1/2' onClick={raiseAlert}>Sign Up</button>
-                        <button className='border border-white rounded-full text-white py-2 md:w-1/2' onClick={raiseAlert}>Request Quote</button>
+                        <Link to={'/signup'} className='bg-[#F1F252] rounded-full text-[#1c1b18] py-2 md:w-1/2 align-center text-center'>Sign Up</Link>
+                        <Link to={'./pricing'} className='border border-white rounded-full text-white py-2 md:w-1/2  align-center text-center'>Request Quote</Link>
                     </div>
                 </div>
                 <div className="flex">
@@ -39,9 +34,9 @@ export default function Home() {
                 </div>
 
             </div>
-          <Features/>
-          <RequestCall/>
-          <Footer/>
+            <Features />
+            <RequestCall />
+            <Footer />
             {/* <img src={Dashboard} alt="image here" className='mx-4 mt-6 opacity-34' /> */}
 
             {/* <EarlyAccess /> */}

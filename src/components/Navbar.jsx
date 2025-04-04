@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Pricing from './core/Pricing'
 
 
 export default function Navbar() {
@@ -19,7 +20,7 @@ export default function Navbar() {
         <h1 className='absolute w-full text-right pr-6 text-4xl cursor-pointer' onClick={openNav}>x</h1>
         <div className=' text-white top-0 py-2   mb-10 mt-10'>realtors<span className='text-[#F1F252]'>.</span></div>
 
-        <li>Pricing</li>
+        <Link to={'/pricing'}>Pricing</Link>
         {/* <div className='relative'>
           <h1>To Let</h1>
           <div className='text-sm absolute top-1 right-16 text-black px-1 bg-[#F1F252] rounded-md'>NEW</div>
