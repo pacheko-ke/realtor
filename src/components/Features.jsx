@@ -12,10 +12,7 @@ export default function Features() {
             <h1 className='text-2xl font-bold mb-2'>Manage Your Properties. But With Zero Hassle</h1>
 
             <div className='flex flex-col gap-y-4 '>
-                <div className="bg-blue-300 border-2 h-[20vh] border-black rounded-xl p-2">
-                    <h1 className='text-md font-bold '>Multiple Payment Methods</h1>
-                    <p>The mobile app allows your tenants to send payments easily and conviniently through a number of supported payment providers.</p>
-                </div>
+               
                 {/* <div className="overflow-x-scroll flex gap-2">
 
                     <img src={Mpesa} alt="mpesa" className='flex-none size-28' />
@@ -39,7 +36,7 @@ export default function Features() {
                 </div>
                 <div className="bg-blue-300 border-2 h-[20vh] border-black rounded-xl p-2">
                     <h1 className='text-md font-bold mt-4'>Flexible and convinient</h1>
-                    <p>Manage multiple properties; anytime anywhere through our web app, USSD or Mobile App.</p>
+                    <p>Multiple properties and Multiple Payment options; anytime anywhere through our web app, USSD or Mobile App.</p>
                     {/* <img src={Chat} alt="payment" /> */}
                 </div>
 
