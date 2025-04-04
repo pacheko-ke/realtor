@@ -1,6 +1,8 @@
 import React from 'react'
 import { motion } from "motion/react"
 import EarlyAccess from './core/EarlyAccess'
+import RequestCall from './core/RequestCall'
+import Footer from './core/Footer'
 import Features from './Features'
 import Dashboard from '../assets/images/dashboard-illustration.svg'
 import { Link } from 'react-router-dom'
@@ -37,7 +39,9 @@ export default function Home() {
                 </div>
 
             </div>
-            <Features/>
+          <Features/>
+          <RequestCall/>
+          <Footer/>
             {/* <img src={Dashboard} alt="image here" className='mx-4 mt-6 opacity-34' /> */}
 
             {/* <EarlyAccess /> */}
