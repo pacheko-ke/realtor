@@ -47,7 +47,7 @@ export default function Landlord() {
                 </div>
 
                 {/* main content */}
-                <div className="flex flex-col main-content size-full mr-4 gap-4">
+                <div className="flex flex-col main-content size-full gap-4">
                     <div className="flex flex-row justify-between ">
                         <input type="text" placeholder='Search anything here' className='text-sm pl-2' />
 
