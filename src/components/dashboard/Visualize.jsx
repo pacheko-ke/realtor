@@ -1,4 +1,4 @@
-import React ,{PureComponent} from 'react'
+import React, { PureComponent } from 'react'
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend, PieChart, Pie, } from 'recharts';
 
 // dummy data for testing
@@ -75,27 +75,27 @@ export default function Visualize() {
             <div className="flex gap-6 flex-col md:flex-row">
                 <div className="flex w-full md:basis-1/2 bg-gray-100 shadow-lg flex-col py-2 ">
                     <h1 className='text-md'>Revenue Collection Since January</h1>
-                    <ResponsiveContainer width="100%" height="100%">
-                        <LineChart
-                            width={500}
-                            height={300}
-                            data={data3}
-                            margin={{
-                                top: 5,
-                                right: 30,
-                                left: 20,
-                                bottom: 5,
-                            }}
-                        >
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="name" />
-                            <YAxis />
-                            <Tooltip />
-                            <Legend />
-                            <Line type="monotone" dataKey="Expenditure" stroke="#8884d8" activeDot={{ r: 8 }} />
-                            <Line type="monotone" dataKey="Income" stroke="#82ca9d" />
-                        </LineChart>
-                    </ResponsiveContainer>
+
+                    <LineChart
+                        width={500}
+                        height={300}
+                        data={data3}
+                        margin={{
+                            top: 5,
+                            right: 30,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Line type="monotone" dataKey="Expenditure" stroke="#8884d8" activeDot={{ r: 8 }} />
+                        <Line type="monotone" dataKey="Income" stroke="#82ca9d" />
+                    </LineChart>
+
                 </div>
                 <div className="flex w-full  md:basis-1/2  bg-gray-100 shadow-lg flex-col ">
                     <h1 className='text-xl'>Revenue Collection Per Apartment</h1>
