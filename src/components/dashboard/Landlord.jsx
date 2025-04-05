@@ -71,7 +71,7 @@ export default function Landlord() {
 
                     </div>
                     <div className="flex j gap-6 flex-wrap md:flex-nowrap w-full">
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full  md:basis-1/3 shadow-lg '>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full  md:basis-1/3 shadow-lg h-[15vh]'>
                             <h1 className='text-sm'>Total Expenditure</h1>
                             <h1 className='font-bold'>$230,000.00</h1>
                             <div className="flex gap-x-2">
@@ -79,7 +79,7 @@ export default function Landlord() {
                                 <h1 className='text-xs py-1'>Compared to last month</h1>
                             </div>
                         </div>
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg'>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh]'>
                             <h1 className='text-sm'>Total Properties</h1>
                             <h1 className='font-bold'>15</h1>
                             <div className="flex gap-x-2">
@@ -87,7 +87,7 @@ export default function Landlord() {
                                 <h1 className='text-xs py-1'>Compared to last month</h1>
                             </div>
                         </div>
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg'>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh]'>
                             <h1 className='text-sm'>Tenants</h1>
                             <h1 className='font-bold text-xl    '>600</h1>
                             <div className="flex">
@@ -95,7 +95,7 @@ export default function Landlord() {
                                 <h1 className='text-sm'>Compared to last month</h1>
                             </div>
                         </div>
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg'>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh]'>
                             <h1 className='text-sm'>Total Income</h1>
                             <h1 className='font-bold'>$230,000.00</h1>
                             <div className="flex">
