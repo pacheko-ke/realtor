@@ -74,18 +74,13 @@ export default function Visualize() {
             {/* Data visualization section */}
             <div className="flex gap-6 flex-col md:flex-row">
                 <div className="flex w-full md:basis-1/2 bg-gray-100 shadow-lg flex-col py-2 ">
-                    <h1 className='text-md'>Revenue Collection Since January</h1>
+                    <h1 className='text-xl'>Revenue Collection Since January</h1>
 
                     <LineChart
-                        width={500}
+                        width={300}
                         height={300}
                         data={data3}
-                        margin={{
-                            top: 5,
-                            right: 30,
-                            left: 20,
-                            bottom: 5,
-                        }}
+
                     >
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="name" />
