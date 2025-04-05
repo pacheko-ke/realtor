@@ -20,14 +20,14 @@ export default function Landlord() {
         <div>
             <div className="relative flex gap-4 h-full mx-6 mt-4 flex-row ">
                 {/* sidenav */}
-                <div className={sideHidden ? "sidebar gap-6 hidden text-left" : " sidebar gap-6 text-left flex flex-col absolute bg-black text-white pl-4 z-20 h-full fixed  left-0 top-0 w-3/4 pt-2"}>
+                <div className={sideHidden ? "sidebar gap-6 hidden text-left" : " sidebar gap-6 text-left flex flex-col absolute lg:relative lg:bg-white lg:text-black lg:w-1/4 bg-black text-white pl-4 z-20 h-full fixed  left-0 top-0 w-3/4 pt-2"}>
 
                     <div className='flex justify-between pr-2'>
                         <h1 className='text-xl'>realtors.</h1>
 
                         {/* menu close icon */}
                        
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8" onClick={() => showSideMenu()}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-8 lg:hidden" onClick={() => showSideMenu()}>
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>
 
@@ -61,7 +61,7 @@ export default function Landlord() {
                 <div className="flex flex-col main-content size-full gap-4">
                     <div className="flex flex-row justify-between ">
                         {/* menu hide icon */}
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 menu-humburger " onClick={() => showSideNav()}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8 menu-humburger lg:hidden" onClick={() => showSideNav()}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                         <input type="text" placeholder='Search anything here' className='text-sm pl-2' />
