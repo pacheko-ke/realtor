@@ -20,10 +20,10 @@ export default function Landlord() {
         <div>
             <div className="relative flex gap-4 h-full mx-6 mt-4 flex-row ">
                 {/* sidenav */}
-                <div className={sideHidden ? "sidebar gap-6 hidden text-left" : " sidebar gap-6 text-left flex flex-col absolute bg-black text-white pl-4 z-20 h-full fixed  left-0 top-0 w-3/4"}>
+                <div className={sideHidden ? "sidebar gap-6 hidden text-left" : " sidebar gap-6 text-left flex flex-col absolute bg-black text-white pl-4 z-20 h-full fixed  left-0 top-0 w-3/4 pt-2"}>
 
                     <div className='flex justify-between pr-2'>
-                        <h1>realtors</h1>
+                        <h1 className='text-xl'>realtors.</h1>
 
                         {/* menu close icon */}
                        
@@ -35,7 +35,7 @@ export default function Landlord() {
 
                     <h1 className='text-gray-400'>MAIN MENU</h1>
                     {data.map((data, i) => {
-                        return (<h1 key={i} className='cursor-pointer'>{data}</h1>)
+                        return (<h1 key={i} className='cursor-pointer text-lg'>{data}</h1>)
 
                     })
 
@@ -53,10 +53,7 @@ export default function Landlord() {
                     <h1>Feedback</h1>
                     <h1>Help and Docs</h1>
 
-                    <div className='px-2 size-32 bg-black mt-32 rounded-md flex-col flex gap-2 pt-4 text-sm'>
-                        <h1 className='text-white'>Get detailed analytics to help you</h1>
-                        <button className='rounded-md bg-white text-black'>Upgrade Now</button>
-                    </div>
+                   
 
                 </div>
 
