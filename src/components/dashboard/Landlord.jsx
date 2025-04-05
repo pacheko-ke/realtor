@@ -6,14 +6,22 @@ import Visualize from './Visualize';
 
 
 export default function Landlord() {
+
+    const [sideHidden,showSideNav] = React.useState(true)
+    function showSideMenu(){
+        showSideNav(false)
+    }
+
     return (
         <div>
             <div className="flex gap-4 h-full mx-6 mt-4 flex-row ">
                 {/* sidenav */}
-                <div className=" sidebar gap-6 text-left hidden lg:flex flex-col">
+                <div className={sideHidden?"sidebar gap-6 hidden text-left":" sidebar gap-6 text-left flex flex-col"}>
 
                     <div className='flex gap-4'>
-                        <h1>Keja</h1>
+                        <h1>realtors</h1>
+
+                        {/* menu hide icon */}
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
@@ -49,6 +57,10 @@ export default function Landlord() {
                 {/* main content */}
                 <div className="flex flex-col main-content size-full gap-4">
                     <div className="flex flex-row justify-between ">
+                         {/* menu hide icon */}
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 menu-humburger " onClick={()=>showSideNav()}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
                         <input type="text" placeholder='Search anything here' className='text-sm pl-2' />
 
                         <div className="flex justify-between gap-2">
