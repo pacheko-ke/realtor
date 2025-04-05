@@ -10,7 +10,7 @@ export default function Landlord() {
         <div>
             <div className="flex gap-4 h-full mx-6 mt-4 flex-row ">
                 {/* sidenav */}
-                <div className=" sidebar gap-6 text-left hidden md:flex flex-col">
+                <div className=" sidebar gap-6 text-left hidden lg:flex flex-col">
 
                     <div className='flex gap-4'>
                         <h1>Keja</h1>
@@ -21,7 +21,7 @@ export default function Landlord() {
 
                     <h1 className='text-gray-400'>MAIN MENU</h1>
                     {data.map((data, i) => {
-                        return (<h1 key={i}>{data}</h1>)
+                        return (<h1 key={i} className='cursor-pointer'>{data}</h1>)
 
                     })
 
@@ -49,7 +49,7 @@ export default function Landlord() {
                 {/* main content */}
                 <div className="flex flex-col main-content size-full mr-4 gap-4">
                     <div className="flex flex-row justify-between ">
-                        <input type="text" placeholder='Search anything here' className='text-sm' />
+                        <input type="text" placeholder='Search anything here' className='text-sm pl-2' />
 
                         <div className="flex justify-between gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 my-1">
@@ -71,15 +71,15 @@ export default function Landlord() {
 
                     </div>
                     <div className="flex j gap-6 flex-wrap md:flex-nowrap w-full">
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full  md:basis-1/3 shadow-lg h-[15vh]'>
-                            <h1 className='text-sm'>Total Expenditure</h1>
-                            <h1 className='font-bold'>$230,000.00</h1>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full  md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
+                            <h1 className='text-2xl'>Total Expenditure</h1>
+                            <h1 className='font-bold text-xl'>$230,000.00</h1>
                             <div className="flex gap-x-2">
-                                <h1 className='text-xs bg-green-300 p-1 rounded-sm'>12.52</h1>
-                                <h1 className='text-xs py-1'>Compared to last month</h1>
+                                <h1 className='text-md bg-green-300 p-1 rounded-sm'>12.52</h1>
+                                <h1 className='text-md py-1'>Compared to last month</h1>
                             </div>
                         </div>
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh]'>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
                             <h1 className='text-sm'>Total Properties</h1>
                             <h1 className='font-bold'>15</h1>
                             <div className="flex gap-x-2">
@@ -87,7 +87,7 @@ export default function Landlord() {
                                 <h1 className='text-xs py-1'>Compared to last month</h1>
                             </div>
                         </div>
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh]'>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
                             <h1 className='text-sm'>Tenants</h1>
                             <h1 className='font-bold text-xl    '>600</h1>
                             <div className="flex">
@@ -95,7 +95,7 @@ export default function Landlord() {
                                 <h1 className='text-sm'>Compared to last month</h1>
                             </div>
                         </div>
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh]'>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
                             <h1 className='text-sm'>Total Income</h1>
                             <h1 className='font-bold'>$230,000.00</h1>
                             <div className="flex">
@@ -105,7 +105,7 @@ export default function Landlord() {
                         </div>
 
                     </div>
-                    <Visualize/>
+                    <Visualize />
 
 
 
