@@ -28,7 +28,7 @@ export default function Visualize() {
             <div className="flex gap-6 flex-col md:flex-row">
                 <div className="flex w-full md:basis-1/2 bg-gray-100 shadow-lg flex-col py-2 ">
                     <h1 className='text-xl'>Revenue Collection Per Quarter</h1>
-                    <LineChart width={400} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+                    <LineChart width={400} height={300} data={data} >
                         <Line type="monotone" dataKey="uv" stroke="#8884d8" />
                         <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                         <XAxis dataKey="name" />
@@ -42,6 +42,7 @@ export default function Visualize() {
                         <PieChart width={400} height={400}>
                             <Pie data={data01} dataKey="value" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
                             <Pie data={data02} dataKey="value" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                        <Tooltip/>
                         </PieChart>
                     </ResponsiveContainer>
 
@@ -51,11 +52,7 @@ export default function Visualize() {
 
             <div className="flex gap-6 flex-col md:flex-row">
                 <div className="flex w-full md:w-1/2 bg-gray-100 shadow-lg ">
-
-
-
-
-                    <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+                    <LineChart width={400} height={300} data={data} >
                         <Line type="monotone" dataKey="uv" stroke="#8884d8" />
                         <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                         <XAxis dataKey="name" />
@@ -68,7 +65,7 @@ export default function Visualize() {
                 <div className="flex md:w-1/2 bg-gray-100 shadow-lg  flex-col py-2">
                     <h1 className='text-xl'>Dues cleared</h1>
 
-                    <LineChart width={400} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+                    <LineChart width={400} height={300} data={data} >
                         <Line type="monotone" dataKey="uv" stroke="#8884d8" />
                         <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                         <XAxis dataKey="name" />
