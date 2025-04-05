@@ -26,7 +26,7 @@ export default function Landlord() {
                         <h1 className='text-xl'>realtors.</h1>
 
                         {/* menu close icon */}
-                       
+
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-8 lg:hidden" onClick={() => showSideMenu()}>
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>
@@ -53,7 +53,7 @@ export default function Landlord() {
                     <h1>Feedback</h1>
                     <h1>Help and Docs</h1>
 
-                   
+
 
                 </div>
 
@@ -95,15 +95,15 @@ export default function Landlord() {
                             </div>
                         </div>
                         <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
-                            <h1 className='text-sm'>Total Properties</h1>
-                            <h1 className='font-bold'>15</h1>
+                            <h1 className='text-2xl'>Total Properties</h1>
+                            <h1 className='font-bold text-xl'>15</h1>
                             <div className="flex gap-x-2">
                                 <h1 className='text-xs bg-red-500 p-1 rounded-sm'>12.52</h1>
                                 <h1 className='text-xs py-1'>Compared to last month</h1>
                             </div>
                         </div>
                         <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
-                            <h1 className='text-sm'>Tenants</h1>
+                            <h1 className='text-2xl'>Tenants</h1>
                             <h1 className='font-bold text-xl    '>600</h1>
                             <div className="flex">
                                 <h1 className='text-xs py-1'>12.52</h1>
@@ -111,8 +111,8 @@ export default function Landlord() {
                             </div>
                         </div>
                         <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
-                            <h1 className='text-sm'>Total Income</h1>
-                            <h1 className='font-bold'>$230,000.00</h1>
+                            <h1 className='text-2xl'>Total Income</h1>
+                            <h1 className='font-bold text-xl'>$230,000.00</h1>
                             <div className="flex">
                                 <h1 className='text-xs py-1'>12.52</h1>
                                 <h1 className='text-sm'>Compared to last month</h1>
