@@ -85,38 +85,58 @@ export default function Landlord() {
                         <h1 className="text-lg font-bold mt-4">Overview</h1>
 
                     </div>
-                    <div className="flex j gap-6 flex-wrap md:flex-nowrap w-full">
+                    <div className="flex gap-6 flex-wrap md:flex-nowrap w-full">
                         <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full  md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
+
                             <h1 className='text-2xl'>Total Expenditure</h1>
                             <h1 className='font-bold text-xl'>$230,000.00</h1>
                             <div className="flex gap-x-2">
                                 <h1 className='text-md bg-green-300 p-1 rounded-sm'>12.52</h1>
                                 <h1 className='text-md py-1'>Compared to last month</h1>
                             </div>
+
+
+
+
                         </div>
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
-                            <h1 className='text-2xl'>Total Properties</h1>
-                            <h1 className='font-bold text-xl'>15</h1>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full  md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
+
+                            <h1 className='text-2xl'>Properties</h1>
+                            <h1 className='font-bold text-xl'>23</h1>
                             <div className="flex gap-x-2">
-                                <h1 className='text-xs bg-red-500 p-1 rounded-sm'>12.52</h1>
-                                <h1 className='text-xs py-1'>Compared to last month</h1>
+                                <h1 className='text-md bg-green-300 p-1 rounded-sm'>12.52</h1>
+                                <h1 className='text-md py-1'>Compared to last month</h1>
                             </div>
+
+
+
+
                         </div>
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full  md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
+
                             <h1 className='text-2xl'>Tenants</h1>
-                            <h1 className='font-bold text-xl    '>600</h1>
-                            <div className="flex">
-                                <h1 className='text-xs py-1'>12.52</h1>
-                                <h1 className='text-sm'>Compared to last month</h1>
+                            <h1 className='font-bold text-xl'>725</h1>
+                            <div className="flex gap-x-2">
+                                <h1 className='text-md bg-green-300 p-1 rounded-sm'>12.52</h1>
+                                <h1 className='text-md py-1'>Compared to last month</h1>
                             </div>
+
+
+
+
                         </div>
-                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
-                            <h1 className='text-2xl'>Total Income</h1>
+                        <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full  md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
+
+                            <h1 className='text-2xl'>Income</h1>
                             <h1 className='font-bold text-xl'>$230,000.00</h1>
-                            <div className="flex">
-                                <h1 className='text-xs py-1'>12.52</h1>
-                                <h1 className='text-sm'>Compared to last month</h1>
+                            <div className="flex gap-x-2">
+                                <h1 className='text-md bg-red-500 p-1 rounded-sm'>12.52</h1>
+                                <h1 className='text-md py-1'>Compared to last month</h1>
                             </div>
+
+
+
+
                         </div>
 
                     </div>
