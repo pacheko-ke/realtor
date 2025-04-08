@@ -70,7 +70,7 @@ export default function Login() {
                     <p className='text-sm'>I agree to the terms of service and incorporated terms, no fees terms, sanctions agreement and understand realtor’s privacy notice.</p>
                 </div>
 
-                <button className='bg-[#F1F252] py-2 rounded-full cursor-pointer'>Proceed to Dashboard</button>
+                <Link to={'/dashboard'} className='bg-[#F1F252] text-center py-2 rounded-full cursor-pointer'>Proceed to Dashboard</Link>
             </div>
         </div>
     )

@@ -6,22 +6,36 @@ import Visualize from './Visualize';
 
 
 export default function Landlord() {
+
+    const [sideHidden, showSideNav] = React.useState(true)
+    function showSideMenu() {
+        showSideNav(!sideHidden)
+    }
+
+    function hideMenu() {
+        showSideNav(true)
+    }
+
     return (
         <div>
-            <div className="flex gap-4 h-full mx-6 mt-4 flex-row ">
+            <div className="relative flex gap-4 h-full mx-6 mt-4 flex-row ">
                 {/* sidenav */}
-                <div className=" sidebar gap-6 text-left hidden lg:flex flex-col">
+                <div className={sideHidden ? "sidebar gap-6 hidden text-left" : " sidebar gap-6 text-left flex flex-col absolute lg:relative lg:bg-white lg:text-black lg:w-1/4 bg-black text-white pl-4 z-20 h-full fixed  left-0 top-0 w-3/4 pt-2"}>
 
-                    <div className='flex gap-4'>
-                        <h1>Keja</h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    <div className='flex justify-between pr-2'>
+                        <h1 className='text-xl'>realtors.</h1>
+
+                        {/* menu close icon */}
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-8 lg:hidden" onClick={() => showSideMenu()}>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>
+
                     </div>
 
                     <h1 className='text-gray-400'>MAIN MENU</h1>
                     {data.map((data, i) => {
-                        return (<h1 key={i} className='cursor-pointer'>{data}</h1>)
+                        return (<h1 key={i} className='cursor-pointer text-lg'>{data}</h1>)
 
                     })
 
@@ -39,16 +53,17 @@ export default function Landlord() {
                     <h1>Feedback</h1>
                     <h1>Help and Docs</h1>
 
-                    <div className='px-2 size-32 bg-black mt-32 rounded-md flex-col flex gap-2 pt-4 text-sm'>
-                        <h1 className='text-white'>Get detailed analytics to help you</h1>
-                        <button className='rounded-md bg-white text-black'>Upgrade Now</button>
-                    </div>
+
 
                 </div>
 
                 {/* main content */}
-                <div className="flex flex-col main-content size-full mr-4 gap-4">
+                <div className="flex flex-col main-content size-full gap-4">
                     <div className="flex flex-row justify-between ">
+                        {/* menu hide icon */}
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8 menu-humburger lg:hidden" onClick={() => showSideNav()}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
                         <input type="text" placeholder='Search anything here' className='text-sm pl-2' />
 
                         <div className="flex justify-between gap-2">
@@ -80,15 +95,15 @@ export default function Landlord() {
                             </div>
                         </div>
                         <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
-                            <h1 className='text-sm'>Total Properties</h1>
-                            <h1 className='font-bold'>15</h1>
+                            <h1 className='text-2xl'>Total Properties</h1>
+                            <h1 className='font-bold text-xl'>15</h1>
                             <div className="flex gap-x-2">
                                 <h1 className='text-xs bg-red-500 p-1 rounded-sm'>12.52</h1>
                                 <h1 className='text-xs py-1'>Compared to last month</h1>
                             </div>
                         </div>
                         <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
-                            <h1 className='text-sm'>Tenants</h1>
+                            <h1 className='text-2xl'>Tenants</h1>
                             <h1 className='font-bold text-xl    '>600</h1>
                             <div className="flex">
                                 <h1 className='text-xs py-1'>12.52</h1>
@@ -96,8 +111,8 @@ export default function Landlord() {
                             </div>
                         </div>
                         <div className='flex flex-col gap-2 text-left border rounded-lg p-2 basis-full md:basis-1/3 shadow-lg h-[15vh] bg-blue-300 '>
-                            <h1 className='text-sm'>Total Income</h1>
-                            <h1 className='font-bold'>$230,000.00</h1>
+                            <h1 className='text-2xl'>Total Income</h1>
+                            <h1 className='font-bold text-xl'>$230,000.00</h1>
                             <div className="flex">
                                 <h1 className='text-xs py-1'>12.52</h1>
                                 <h1 className='text-sm'>Compared to last month</h1>
