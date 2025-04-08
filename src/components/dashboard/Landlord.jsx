@@ -16,6 +16,9 @@ export default function Landlord() {
         showSideNav(true)
     }
 
+
+    
+
     return (
         <div>
             <div className="relative flex gap-4 h-full mx-6 mt-4 flex-row ">
@@ -140,7 +143,11 @@ export default function Landlord() {
                         </div>
 
                     </div>
+
+                    {/* DYNAMIC CONTENT */}
+
                     <Visualize />
+
 
 
 
