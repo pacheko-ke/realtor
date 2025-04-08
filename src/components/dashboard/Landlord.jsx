@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { data } from './dashboardItems'
 import Visualize from './Visualize';
+import { useState } from 'react';
 // import * as React from 'react';
 
 
@@ -16,8 +17,19 @@ export default function Landlord() {
         showSideNav(true)
     }
 
+    const [mainContent, toggleContent] = useState("")
 
-    
+    function showContent() {
+        if (mainContent) {
+            <Visualize />
+            console.log(mainContent)
+
+        } else if (mainContent == "chat") {
+            return 0
+        }
+    }
+
+
 
     return (
         <div>
@@ -145,9 +157,8 @@ export default function Landlord() {
                     </div>
 
                     {/* DYNAMIC CONTENT */}
-
-                    <Visualize />
-
+                    {showContent()
+                    }
 
 
 
